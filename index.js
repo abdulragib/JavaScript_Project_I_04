@@ -1,7 +1,7 @@
 let array = [
-  { id: 1, name: "john", age: "18", profession: "developer" },
-  { id: 2, name: "jack", age: "20", profession: "developer" },
-  { id: 3, name: "karen", age: "19", profession: "admin" },
+  { id: 1, name: "John", age: "18", profession: "Developer" },
+  { id: 2, name: "Jack", age: "20", profession: "Developer" },
+  { id: 3, name: "Karen", age: "19", profession: "Admin" },
 ];
 
 // Use map() to convert all ages to numbers
@@ -22,17 +22,17 @@ array.forEach((item) => {
 });
 
 // Use spread operator to add a new object to the array
-array = [...array, { id: 4, name: "anna", age: 21, profession: "developer" }];
+array = [...array, { id: 4, name: "Anna", age: 21, profession: "Developer" }];
 
 // Use forEach() to render the cards in the UI
 array.forEach((item) => {
   // Create the HTML for the card
   let cardHtml = `
         <ul id="card-design">
-            <li class="adjust">ID: ${item.id}</li>
+            <li class="adjust">${item.id}.</li>
             <li class="adjust">Name: ${item.name}</li>
-            <li class="adjust">Age: ${item.age}</li>
             <li class="adjust">Profession: ${item.profession}</li>
+            <li class="adjust">Age: ${item.age}</li>
         </ul>
     `;
 
@@ -60,7 +60,7 @@ document.getElementById("filter-button").addEventListener("click", () => {
     // Create the HTML for the card
     let cardHtml = `
         <ul id="card-design">
-        <li class="adjust">ID: ${item.id}</li>
+        <li class="adjust">ID: ${item.id}.</li>
         <li class="adjust">Name: ${item.name}</li>
         <li class="adjust">Age: ${item.age}</li>
         <li class="adjust">Profession: ${item.profession}</li>
